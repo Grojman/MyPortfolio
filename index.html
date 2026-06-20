@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Jorge Gomis — Portfolio</title>
+</head>
+<body>
+  <header>
+      <article class="header-card">
+        <img src="./images/about/foto.jpg" alt="foto de perfil" class="perfil-image">
+        <div class="contact-list">
+          <a target="_blank" href="https://github.com/Grojman">
+             <img src="images/about/github.png" class="contact-image">
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/jorge-gomis-román-5ab74b275/">
+             <img src="images/about/linkedin.png" class="contact-image">
+          </a>
+        </div>
+      </article>
+  
+      <article class="header-card">
+        <div>
+          <h1>Jorge Gomis Román</h1>
+          <p>Backend Software developer</p>
+        </div>
+
+        <a download="cv.pdf" href="">
+          <div class="my-cv">
+            <i class="fa fa-file my-cv-icon" aria-hidden="true"></i>
+            <p class="my-cv-text">CV</p>
+          </div>
+        </a>
+
+        <div class="header-actions">
+          <button id="toggle-theme" class="theme-toggle">
+            <i class="fa" aria-hidden="true"></i>
+          </button>
+          <div class="lang-switch">
+            <select id="lang-select" class="lang-select" aria-label="Select language">
+              <option value="es">ES - Español</option>
+              <option value="en">EN - English</option>
+            </select>
+          </div>
+        </div>
+      </article>
+  </header>
+    
+    <main>
+      <section class="about-me">
+        <header>
+          <h2 class="about-me-title">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            Sobre mí
+          </h2>
+        </header>
+
+        <p>Soy un estudiante de la <strong>Universidad de Alicante</strong> que busca superarse cada día con nuevos retos y desafíos.</p>
+  
+        <p>Adoro las dificultades técnicas, y exprimir hasta la última gota de optimización en mis programas. El usuario merece una experiencia fluida y a prueba de errores.</p>
+
+        <p>Mantener un código limpio nos ahorra muchos problemas en el futuro. Los patrones de desarrollo están ahí para que podamos desarrollar aplicaciones escalables y flexibles.</p>
+      </section>
+
+      <section class="tecnologies">
+        <header class="tecnologies-title">
+          <h2>
+            <i class="fa fa-terminal" aria-hidden="true"></i>
+            Tecnologías:
+          </h2>
+        </header>    
+      
+        <div class="tecnologies-container">
+        </div>
+        
+      </section>
+
+      <section class="timeline">
+        <header class="timeline-title">
+          <h2>
+            <i class="fa fa-paperclip" aria-hidden="true"></i>
+            Mi carrera
+          </h2>
+        </header>
+      </section>
+      <button class="show-more-timeline">Saber más...</button>
+    
+      <section class="proyects-container">
+        <header>
+          <h2 class="proyects-title">
+            <i class="fa fa-link" aria-hidden="true"></i>
+            Mis proyectos
+          </h2>
+        </header>
+      </section>
+    </main>
+  
+  <footer>
+    <section class="footer-bar">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p>Jorge Gomis Román — Backend Software Developer</p>
+          <p><a href="mailto:jorge@example.com">jorge@example.com</a> · <a href="https://www.linkedin.com/in/jorge-gomis-rom%C3%A1n-5ab74b275/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="footer-right">
+          <!-- Footer buttons removed per request -->
+        </div>
+      </div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/jorge-gomis-rom%C3%A1n-5ab74b275/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Grojman" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+        <a href="https://www.infojobs.net/" target="_blank"><i class="fa fa-briefcase"></i> InfoJobs</a>
+        <a href="https://itch.io/" target="_blank"><i class="fa fa-moon-o"></i> Itch.io</a>
+      </div>
+      <div class="footer-note">© <span id="year"></span> Jorge Gomis. All rights reserved.</div>
+    </section>
+  </footer>
+
+  <!-- Contact modal removed; contact links provided in footer -->
+
+  <script type="module" src="main.js"></script>
+  <script>
+    // small footer runtime touches
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
