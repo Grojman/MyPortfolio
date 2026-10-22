@@ -181,8 +181,9 @@ function renderProjects(projectArray, technologyArray, lang = 'es') {
       timelineTitle: 'My career',
       showMore: 'Show more...',
       projectsTitle: 'My projects',
+      personaLink: 'GomiDev — My game developer side',
       footerBio: 'Jorge Gomis Román — Backend Software Developer',
-      footerContactLine: '<a href="mailto:jorge@example.com">jorge@example.com</a> · <a href="https://www.linkedin.com/in/jorge-gomis-rom%C3%A1n-5ab74b275/" target="_blank">LinkedIn</a>'
+      footerContactLine: '<a href="mailto:gomisromanjorge@gmail.com">gomisromanjorge@gmail.com</a> · <a href="https://www.linkedin.com/in/jorge-gomis-rom%C3%A1n-5ab74b275/" target="_blank">LinkedIn</a>'
     },
     es: {
       aboutTitle: 'Sobre mí',
@@ -195,8 +196,9 @@ function renderProjects(projectArray, technologyArray, lang = 'es') {
       timelineTitle: 'Mi carrera',
       showMore: 'Saber más...',
       projectsTitle: 'Mis proyectos',
+      personaLink: 'GomiDev — Mi faceta como desarrollador de videojuegos',
       footerBio: 'Jorge Gomis Román — Desarrollador de software backend',
-      footerContactLine: '<a href="mailto:jorge@example.com">jorge@example.com</a> · <a href="https://www.linkedin.com/in/jorge-gomis-rom%C3%A1n-5ab74b275/" target="_blank">LinkedIn</a>'
+      footerContactLine: '<a href="mailto:gomisromanjorge@gmail.com">gomisromanjorge@gmail.com</a> · <a href="https://www.linkedin.com/in/jorge-gomis-rom%C3%A1n-5ab74b275/" target="_blank">LinkedIn</a>'
     }
   };
 
@@ -221,6 +223,9 @@ function renderProjects(projectArray, technologyArray, lang = 'es') {
 
     const projectsTitle = document.querySelector('.proyects-title');
     if (projectsTitle) projectsTitle.innerHTML = `<i class="fa fa-link" aria-hidden="true"></i> ${t.projectsTitle}`;
+
+    const personaLink = document.querySelector('.persona-link-text');
+    if (personaLink) personaLink.textContent = t.personaLink;
 
     const footerBio = document.querySelector('.footer-left p');
     if (footerBio) footerBio.textContent = t.footerBio;

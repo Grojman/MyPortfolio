@@ -106,6 +106,22 @@ a {
     }
 }
 
+.persona-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: large;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    background-color: var(--header-bg-color-2);
+    text-decoration: none;
+    transition: 0.25s transform ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
 .my-cv {
     display: flex;
     flex-direction: column;
